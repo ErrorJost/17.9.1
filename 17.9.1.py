@@ -21,7 +21,7 @@ print("Вы ввели следующие числа: ", array)
 while True:
     try:
         element = int(input("Введите целое положительное число от 1 до 99: "))
-        if element < 0 or element > 99:
+        if element < 1 or element > 99:
             raise Exception
         break
     except ValueError:
